@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.6.2/RecordRTC.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.8.0/socket.io.js"></script>
+    <!-- Keep all the CSS styles from your original file -->
+</head>
+<body>
+    <div class="header">
+        <h1>Real-Time Speech Transcription</h1>
+    </div>
+    <hr>
+
+    <p id="transcript"></p>
+
+    <div id="latency-display">
+        Latency: <span id="latency">0</span> ms for each chunk
+    </div>
+
+    <div>
+        <button id="start-recording" disabled>Start Recording</button>
+        <button id="stop-recording" disabled>Stop Recording</button>
+    </div>
+
+    <script>
+    // Modified to connect to local Flask server instead of whissle.ai
+    const socketio = io('http://localhost:5000');
+    const startRecording = document.getElementById('start-recording');
+    const stopRecording = document.getElementById('stop-recording');
+    const transcript = document.getElementById('transcript');
+    const latencyDisplay = document.getElementById('latency');
+    let final_transcript = '';
+
+    let mediaStream = null;
+    let chunkStartTime = null;
+    let recorder = null;
+
+    // Keep all the socket connection and recording logic from your original file,
+    // but remove the model selection parts since we're using a simple implementation
+    
+    // Rest of your JavaScript code...
+    </script>
+</body>
+</html> 

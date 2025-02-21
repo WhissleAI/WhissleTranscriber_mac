@@ -1,0 +1,7 @@
+PyQt6==6.4.0
+python-socketio==5.7.2
+pyaudio==0.2.13
+websocket-client==1.6.1
+google-auth-oauthlib==1.0.0
+google-auth-httplib2==0.1.0
+google-api-python-client==2.86.0 
